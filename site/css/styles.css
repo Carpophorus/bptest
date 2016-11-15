@@ -199,6 +199,7 @@ a span {
 
 @media (min-width: 768px) and (max-width: 991px) { /* SM */
 	#contact-element {
+		width: 100%;
 		border-radius: 5px;
 		background-color: white;
 		color: #333333;
@@ -272,6 +273,7 @@ a span {
 
 @media (max-width: 767px) { /* XS */
 	#contact-element {
+		width: 100%;
 		border-radius: 5px;
 		background-color: white;
 		color: #333333;
