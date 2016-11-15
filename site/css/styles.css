@@ -198,6 +198,10 @@ a span {
 }
 
 @media (min-width: 768px) and (max-width: 991px) { /* SM */
+	.navbar-brand h1 {
+  		font-size: 70%;
+	}
+
 	#contact-element {
 		border-radius: 5px;
 		background-color: white;
@@ -271,6 +275,10 @@ a span {
 }
 
 @media (max-width: 767px) { /* XS */
+	.navbar-brand h1 {
+		font-size: 70%;
+	}
+
 	#contact-element {
 		border-radius: 5px;
 		background-color: white;
