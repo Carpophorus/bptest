@@ -1,3 +1,24 @@
+/*
+	make new font sizes for each media
+
+	home - red			- #7a0e0e, #5a0b0b
+	register - blue		- #0c3647, #011722, #01404f
+	news - orange		- #cb4800
+	about - green		- #0f5959
+	contact - purple	- #5a1846
+ */
+
+/*
+TODO
+
+P capital in the name?
+pictures of associates?
+animations
+smaller images for parallax
+news section
+colored links on hover
+*/
+
 /* HEADER */
 
 .navbar-header {
@@ -27,7 +48,7 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
+    background-color: #333333;
     width: 100%;
     height: 10%;
 }
@@ -41,7 +62,7 @@ li h2 {
 }
 
 #logo-img {
-	background: url('../img/lilly.svg') no-repeat;
+	background: url('../img/mw-logo.png') no-repeat;
 	background-size: 50px 50px;
 	background-position: center;
 	width: 50px;
@@ -95,24 +116,26 @@ body {
 }
 
 #main-content {
-	height: 500px; /* remove */
 	width: 100%;
-	background-color: #cccccc;
+}
+
+#main-content>div {
+	width: 100%;
 }
 
 h1, h2, h3 {
 	font-family: 'Lobster', cursive;
 	text-align: center;
-	color: black;
+	color: #333333;
 }
 
 h4 {
 	font-family: 'Lobster', cursive;
+	font-size: 130%;
 }
 
 a, a:hover, a:focus {
   text-decoration: none;
-  color: black;
   display: block;
 }
 
@@ -123,6 +146,112 @@ a span {
 	top: 0;
 	left: 0;
 	z-index: 1;
+}
+
+#register {
+	background: url('../img/background-register.jpg') no-repeat;
+	height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-size: 130%;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: white;
+    margin: auto;
+}
+
+#news {
+	background: url('../img/background-news.jpg') no-repeat;
+	height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-size: 130%;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: white;
+    margin: auto;
+}
+
+#about {
+	background: url('../img/background-about.jpg') no-repeat;
+	height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-size: 130%;
+    text-align: justify;
+    line-height: 175%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    margin: auto;
+}
+
+#about p {
+	text-align: center;
+}
+
+#team {
+	padding-top: 100px;
+    padding-bottom: 100px; 
+}
+
+.person {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.personName {
+	font-size: 150%;
+	font-style: bold;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.personName, .occupation {
+	text-align: center;
+}
+
+.directors {
+	background: url('../img/profile-directors.jpg') no-repeat;
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+	margin: auto;
+}
+
+.employees {
+	background: url('../img/profile-employees.jpg') no-repeat;
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+	margin: auto;
+}
+
+#contact {
+	background: url('../img/background-contact.jpg') no-repeat;
+	height: 100%;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+
+	font-size: 130%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    margin: auto;
 }
 
 #fb-logo-img {
