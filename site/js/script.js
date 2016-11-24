@@ -43,6 +43,7 @@ $(function () {
 
 	bp.loadRegister = function () {
 		//showLoading("#main-content");
+		history.pushState(null, null, "/register");
 		$ajaxUtils.sendGetRequest(
 			registerHtml,
 			function (responseText) {
