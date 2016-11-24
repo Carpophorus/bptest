@@ -438,8 +438,8 @@ a span {
 	animation-name: slideUp;
 	-webkit-animation-name: slideUp;	
 
-	animation-duration: 0.2s;	
-	-webkit-animation-duration: 0.2s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;
