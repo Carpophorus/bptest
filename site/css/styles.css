@@ -85,7 +85,10 @@ li h2 {
 .footer-part {
 	height: 100%;
 	text-align: center;
-	padding: 30px;
+}
+
+.footer-part hr {
+	width: 80%;
 }
 
 .footer-part div a, .footer-part div a:hover, .footer-part div a:focus {
@@ -94,11 +97,11 @@ li h2 {
 }
 
 #footer-contact-text {
-	margin-top: -25px; 
+	margin-top: -25px;
 }
 
 #contact-element {
-	width: 70%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -130,7 +133,7 @@ h1, h2, h3 {
 	color: #333333;
 }
 
-h4 {
+h4, h5 {
 	font-family: 'Lobster', cursive;
 	font-size: 130%;
 }
@@ -148,6 +151,127 @@ a span {
 	top: 0;
 	left: 0;
 	z-index: 1;
+}
+
+#mw {
+	background: url('../img/background-mw.jpg') no-repeat;
+	height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-size: 130%;
+    text-align: justify;
+    line-height: 175%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    margin: auto;
+}
+
+#texts {
+    font-size: 130%;
+    text-align: justify;
+    line-height: 175%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+}
+
+#info {
+	background: url('../img/background-info.jpg') no-repeat;
+	height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-size: 130%;
+    text-align: justify;
+    line-height: 175%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    margin: auto;
+}
+
+#mw h4 {
+	text-align: center;
+	font-size: 200%;
+	line-height: 150%;
+}
+
+#mw h5 {
+	text-align: center;
+}
+
+#mw-link {
+	color: #5a0b0b;
+	width: 45%;
+	margin-top: 50px;
+	border-radius: 5px;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	background-color: white;
+}
+
+.mw-link-left {
+	margin-right: 5%;
+}
+
+.mw-link-right {
+	margin-left: 5%;
+}
+
+#texts-fb-logo-img {
+	background: url('../img/fb-logo-red.svg') no-repeat;
+	background-size: 50px 50px;
+	background-position: center;
+	height: 50px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#texts-tw-logo-img {
+	background: url('../img/tw-logo-red.svg') no-repeat;
+	background-size: 50px 50px;
+	background-position: center;
+	height: 50px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#texts-link {
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 5px;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	background-color: #7a0e0e;
+}
+
+#texts-center {
+	text-align: center;
+}
+
+#info-link {
+	color: #5a0b0b;
+	margin-top: 50px;
+	border-radius: 5px;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	background-color: white;
 }
 
 #register {
@@ -184,12 +308,6 @@ a span {
 	background-color: white;
 	margin-bottom: 150px;
 }
-/*#register div div {
-	padding-top: 250px;
-	padding-bottom: 250px;
-	padding-left: 7%;
-	padding-right: 7%;
-}*/
 
 #news {
 	background: url('../img/background-news.jpg') no-repeat;
@@ -368,6 +486,12 @@ a span {
   		font-size: 30px;
 	}
 
+	#mw-link {
+		margin: auto;
+		width: 100%;
+		margin-top: 50px;
+	}
+
 	#contact-element {
 		width: 100%;
 		border-radius: 5px;
@@ -444,6 +568,12 @@ a span {
 @media (max-width: 767px) { /* XS */
 	.navbar-brand h1 {
   		font-size: 30px;
+	}
+
+	#mw-link {
+		margin: auto;
+		width: 100%;
+		margin-top: 50px;
 	}
 
 	#contact-element {
