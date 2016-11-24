@@ -41,6 +41,18 @@ $(function () {
 		);
 	});
 
+	bp.loadHome = function () {
+		//showLoading("#main-content");
+		$ajaxUtils.sendGetRequest(
+			homeHtml,
+			function (responseText) {
+				document.querySelector("#main-content").innerHTML = responseText;
+			},
+			false
+		);
+		window.scrollTo(0,0);
+	};
+
 	bp.loadRegister = function () {
 		//showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(
@@ -50,8 +62,8 @@ $(function () {
 			},
 			false
 		);
+		// history.pushState({oldScrollPosition: ..., newState: "register"}, null, null);
 		window.scrollTo(0,0);
-		history.pushState(null, null, null);
 	};
 
 	bp.loadNews = function () {
