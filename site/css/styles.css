@@ -11,6 +11,9 @@
 /*
 TODO
 
+keywords!
+
+navbar fixed?
 P capital in the name?
 pictures of associates?
 animations
@@ -287,11 +290,12 @@ a span {
     text-align: justify;
     color: white;
     margin: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 #register-info {
 	margin: auto;
-	margin-top: 150px;
 	width: 80%;
 }
 
@@ -306,7 +310,6 @@ a span {
 	line-height: 45px;
 	font-weight: bold;
 	background-color: white;
-	margin-bottom: 150px;
 }
 
 #news {
@@ -403,8 +406,8 @@ a span {
 
 	font-size: 130%;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     color: white;
     margin: auto;
 }
@@ -426,6 +429,47 @@ a span {
 }
 
 /* END OTHER */
+
+/* ANIMATIONS */
+
+.slideUp {
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 0.2s;	
+	-webkit-animation-duration: 0.2s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+	
+	-webkit-animation-fill-mode:forwards; 
+    -moz-animation-fill-mode:forwards;
+    -ms-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    opacity: 1 !important;
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		top: 40px;
+	}
+	100% {
+		opacity: 1;
+		top: 0px;
+	}	
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		opacity: 0;
+		top: 40px;
+	}
+	100% {
+		opacity: 1;
+		top: 0px;
+	}	
+}
 
 /* MEDIA */
 
