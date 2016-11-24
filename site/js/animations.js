@@ -1,32 +1,26 @@
-function isElementInViewport(elem) {
-    var $elem = $(elem);
+var $animation_elements = $('.slideUp');
+var $window = $(window);
 
-    // Get the scroll position of the page.
-    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-    var viewportTop = $(scrollElem).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
+function check_if_in_view() {
+    var window_height = $window.height();
+    var window_top_position = $window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
 
-    // Get the position of the element on the page.
-    var elemTop = Math.round( $elem.offset().top );
-    var elemBottom = elemTop + $elem.height();
+    $.each($animation_elements, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+        console.log("triggered"); //???
 
-    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+        if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+            $element.addClass('in-view');
+        } else {
+            $element.removeClass('in-view');
+        }
+    });
 }
 
-// Check if it's time to start the animation.
-function checkAnimation() {
-    var $elem = $('.slideUp');
-
-    // If the animation has already been started
-    if ($elem.hasClass('start')) return;
-
-    if (isElementInViewport($elem)) {
-        // Start the animation
-        $elem.addClass('start');
-    }
-}
-
-// Capture scroll events
-$(window).scroll(function(){
-    checkAnimation();
-});
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+$window.scroll(function() { check_if_in_view(); console.log("scroll"); }); //???
