@@ -1,5 +1,3 @@
-window.onunload = function() { window.scrollTo(0,0); }
-
 $(function () {
   $("#navbarToggle").blur(function (event) {
     var screenWidth = window.innerWidth;
@@ -52,6 +50,7 @@ $(function () {
 			},
 			false
 		);
+		window.scrollTo(0,0);
 	};
 
 	bp.loadNews = function () {
@@ -63,6 +62,7 @@ $(function () {
 			},
 			false
 		);
+		window.scrollTo(0,0);
 	};
 
 	bp.loadAbout = function () {
@@ -74,6 +74,7 @@ $(function () {
 			},
 			false
 		);
+		window.scrollTo(0,0);
 	};
 
 	bp.loadContact = function () {
@@ -85,6 +86,7 @@ $(function () {
 			},
 			false
 		);
+		window.scrollTo(0,0);
 	};
 
 	global.$bp = bp;
