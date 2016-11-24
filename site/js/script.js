@@ -51,7 +51,7 @@ $(function () {
 			false
 		);
 		window.scrollTo(0,0);
-		history.pushState(null, null, "/bptest/site/register");
+		history.pushState(null, null, null);
 	};
 
 	bp.loadNews = function () {
