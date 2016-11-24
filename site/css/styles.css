@@ -433,6 +433,8 @@ a span {
 /* ANIMATIONS */
 
 .slideUp {
+	position: relative;
+
 	animation-name: slideUp;
 	-webkit-animation-name: slideUp;	
 
