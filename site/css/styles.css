@@ -534,6 +534,10 @@ a span {
 		width: 100%;
 	}
 
+	body {
+		padding-top: 70px;
+	}
+
 	.navbar-brand h1 {
   		font-size: 30px;
 	}
@@ -621,6 +625,10 @@ a span {
 	.navbar-header {
 		position: fixed;
 		width: 100%;
+	}
+
+	body {
+		padding-top: 70px;
 	}
 
 	.navbar-brand h1 {
