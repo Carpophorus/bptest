@@ -622,15 +622,6 @@ a span {
 }
 
 @media (max-width: 767px) { /* XS */
-	.navbar-header {
-		position: fixed;
-		width: 100%;
-	}
-
-	#main-content {
-		padding-top: 70px;
-	}
-
 	.navbar-brand h1 {
   		font-size: 30px;
 	}
