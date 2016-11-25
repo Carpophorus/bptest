@@ -529,6 +529,10 @@ a span {
 }
 
 @media (min-width: 768px) and (max-width: 991px) { /* SM */
+	.navbar-header {
+		position: fixed;
+	}
+
 	.navbar-brand h1 {
   		font-size: 30px;
 	}
@@ -613,6 +617,10 @@ a span {
 }
 
 @media (max-width: 767px) { /* XS */
+	.navbar-header {
+		position: fixed;
+	}
+
 	.navbar-brand h1 {
   		font-size: 30px;
 	}
