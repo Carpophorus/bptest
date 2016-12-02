@@ -4,8 +4,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no">
-	<title>Brak i Porodica</title>
-	<link rel="icon" href="img/mw-logo.png" type="image/x-icon" sizes="32x32">
+
+	<title>Nedelja Braka</title>
+	<meta name="description" content="Srpska grana internacionalne inicijative za osnaživanje i poboljšanje bračnih odnosa &mdash; 7.&ndash;14. februar 2017.">
+	<meta name="keywords" content="nedelja braka, nedelja braka srbija, brak, bračni odnos, bracni odnos, poboljšanje bračnog odnosa, poboljsanje bracnog odnosa, osnaživanje bračnog odnosa, osnazivanje bracnog odnosa, bračno savetovanje, bracno savetovanje">
+
+	<link rel="icon" href="img/mw-favicon.ico" type="image/png" sizes="16x16 32x32">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
@@ -15,16 +19,15 @@
     <script src="js/ajax-utils.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/script.js"></script>
-    <!-- meta information and keywords -->
 </head>
 <body>
 	
 	<header>
-    	<nav id="header-nav" class="navbar navbar-default">
+    	<nav id="header-nav" class="navbar navbar-default hidden-sm hidden-xs">
     		<div class="container">
         		<div class="navbar-header row">
         			<!-- logo -->
-        			<div class="col-lg-1 col-md-1 visible-lg visible-md" id="logo">
+        			<div class="col-lg-1 col-md-1" id="logo">
         				<a href="javascript:void(0)" onclick="$bp.loadHome();">
         					<span></span>
         					<div id="logo-img"></div>
@@ -34,38 +37,51 @@
         			<div class="navbar-brand col-lg-3 col-md-3" id="name">
             			<a href="javascript:void(0)" onclick="$bp.loadHome();">
             				<span></span>
-            				<h1>Brak&nbspi&nbspPorodica</h1>
+            				<h1>Nedelja&nbsp;Braka</h1>
             			</a>
         			</div>
         			<!-- space -->
-        			<div class="col-lg-2 col-md-2 visible-lg visible-md" id="space">
+        			<div class="col-lg-2 col-md-2" id="space">
         			</div>
         			<!-- links -->
         			<div class="row" id="menu-items">
-        				<div class="col-lg-3 col-md-3 visible-lg visible-md">
+        				<div class="col-lg-3 col-md-3">
         					<a href="javascript:void(0)" onclick="$bp.loadRegister();">
         						<span></span>
         						<h2>Prijava</h2>
         					</a>
         				</div>
-        				<div class="col-lg-3 col-md-3 visible-lg visible-md">
+        				<div class="col-lg-3 col-md-3">
         					<a href="javascript:void(0)" onclick="$bp.loadNews();">
         						<span></span>
         						<h2>Novosti</h2>
         					</a>
         				</div>
-        				<div class="col-lg-3 col-md-3 visible-lg visible-md">
+        				<div class="col-lg-3 col-md-3">
         					<a href="javascript:void(0)" onclick="$bp.loadAbout();">
         						<span></span>
-        						<h2>O&nbspnama</h2>
+        						<h2>Istorija</h2>
         					</a>
         				</div>
-        				<div class="col-lg-3 col-md-3 visible-lg visible-md">
+        				<div class="col-lg-3 col-md-3">
         					<a href="javascript:void(0)" onclick="$bp.loadContact();">
         						<span></span>
         						<h2>Kontakt</h2>
         					</a>
         				</div>
+        			</div>
+        		</div>
+        	</div>
+    	</nav>
+    	<nav id="header-nav" class="navbar navbar-default navbar-fixed-top hidden-lg hidden-md">
+    		<div class="container">
+        		<div class="navbar-header row">
+					<!-- name -->
+        			<div class="navbar-brand" id="name">
+            			<a href="javascript:void(0)" onclick="$bp.loadHome();">
+            				<span></span>
+            				<h1>Nedelja&nbsp;Braka</h1>
+            			</a>
         			</div>
 					<!-- button -->
         			<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -92,7 +108,7 @@
 				    	<li>
 				    		<a href="javascript:void(0)" onclick="$bp.loadAbout();">
 				    			<span></span>
-				    			<h2>O&nbspnama</h2>
+				    			<h2>Istorija</h2>
 				    		</a>
 				    	</li>
 				    	<li>
@@ -113,14 +129,14 @@
 	<footer id="footer" class="panel-footer">
 		<div class="container row">
 			<div class="footer-part col-lg-6 col-md-6" id="footer-part-contact">
-				<div><h4>Brak&nbspi&nbspPorodica<h4></div>
+				<div><h4>Nedelja&nbsp;Braka<h4></div>
 				<hr>
 				<div id="contact-element">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-img footer-img-mobile"></div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="footer-contact-text">
 							<a href="tel:+38163248748" class="hidden-lg hidden-md"><span></span></a>
-							+381 63 248748
+							??? +381 63 248748
 						</div>
 					</div>
 				</div>
@@ -129,7 +145,7 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-img footer-img-phone"></div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="footer-contact-text">
 							<a href="tel:+381113556888"  class="hidden-lg hidden-md"><span></span></a>
-							+381 11 3556888
+							??? +381 11 3556888
 						</div>
 					</div>
 				</div>
@@ -138,7 +154,7 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-img footer-img-email"></div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="footer-contact-text">
 							<a href="mailto:office@brakiporodica.org"><span></span></a>
-							office@brakiporodica.org
+							???@nedeljabraka.org
 						</div>
 					</div>
 				</div>

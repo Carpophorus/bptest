@@ -20,6 +20,10 @@ $(function () {
 	var aboutHtml = "snp/about-snippet.html";
 	var contactHtml = "snp/contact-snippet.html";
 
+	var mwHtml = "snp/mw-article.html"
+	var valuesHtml = "snp/values-article.html"
+	var researchHtml = "snp/research-article.html"
+
 	/*var showLoading = function (selector) {
 	  var html = "<div class='text-center'>";
 	  html += "<img src='images/ajax-loader.gif'></div>";
@@ -101,6 +105,32 @@ $(function () {
 		);
 		window.scrollTo(0,0);
 	};
+
+	bp.loadPiece = function (article-number) {
+		//showLoading("#main-content");
+		var articleHtml;
+		switch(expression) {
+			case 1:
+				articleHtml = mwHtml;
+				break;
+			case 2:
+				articleHtml = valuesHtml;
+				break;
+			case 3:
+				articleHtml = researchHtml;
+				break;
+			default:
+				articleHtml = null;
+		}
+		$ajaxUtils.sendGetRequest(
+			articleHtml,
+			function (responseText) {
+				document.querySelector("#main-content").innerHTML = responseText;
+			},
+			false
+		);
+		window.scrollTo(0,0);
+	}
 
 	global.$bp = bp;
 })(window);

@@ -1,32 +1,48 @@
 /*
-	make new font sizes for each media
-
 	home - red			- #7a0e0e, #5a0b0b
 	register - blue		- #0c3647, #011722, #01404f
 	news - orange		- #cb4800
 	about - green		- #0f5959
 	contact - purple	- #5a1846
- */
+*/
 
 /*
-TODO
+	TODO
 
-keywords!
+		news section
+		back navigation
+		animations	
 
-navbar fixed?
-P capital in the name?
-pictures of associates?
-animations
-smaller images for parallax
-news section
-fix map
-colored links on hover
+		smaller images for mobile and mobile parallax
+		colored links on hover
 */
+
+/*
+	REQ
+
+		new contact info
+		video clip
+		Google Forms content
+		companies
+		social
+
+	DONE
+
+		new logo
+		meta info
+		fixed navbar
+		multiple design issues
+ */
 
 /* HEADER */
 
 .navbar-header {
 	width: 100%;
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 10px;
 }
 
 .navbar-header div {
@@ -36,6 +52,10 @@ colored links on hover
 
 .navbar .container .navbar-header .navbar-brand {
 	margin-left: 0;
+}
+
+.navbar-collapse.in {
+	overflow-y: visible;
 }
 
 .navbar-brand h1 {
@@ -66,12 +86,20 @@ li h2 {
 }
 
 #logo-img {
-	background: url('../img/mw-logo.png') no-repeat;
+	background: url('../img/mw-logo-red.svg') no-repeat;
 	background-size: 50px 50px;
 	background-position: center;
 	width: 50px;
 	height: 50px;
 	margin: 10px 15px 10px 15px;
+}
+
+#collapsable-nav ul {
+	padding: 0;
+}
+
+li a h2 {
+	margin-top: 10px;
 }
 
 /* END HEADER */
@@ -156,6 +184,10 @@ a span {
 	z-index: 1;
 }
 
+.no-pad {
+	padding: 0;
+}
+
 #mw {
 	background: url('../img/background-mw.jpg') no-repeat;
 	height: 100%;
@@ -172,6 +204,17 @@ a span {
     padding-right: 15%;
     color: white;
     margin: auto;
+}
+
+#mw-logo {
+	background: url('../img/mw-logo-white.svg') no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	width: 100px;
+	height: 100px;
+
+    margin: auto;
+    margin-bottom: 40px;
 }
 
 #texts {
@@ -203,18 +246,18 @@ a span {
     margin: auto;
 }
 
-#mw h4 {
+#mw h4, #contact h4 {
 	text-align: center;
 	font-size: 250%;
 	line-height: 150%;
+	padding-bottom: 15px;
 }
 
 #mw h5 {
 	text-align: center;
 }
 
-#mw-link {
-	color: #5a0b0b;
+#mw-link, #register-link {
 	width: 45%;
 	margin-top: 50px;
 	border-radius: 5px;
@@ -223,13 +266,40 @@ a span {
 	line-height: 45px;
 	font-weight: bold;
 	background-color: white;
+	padding: 0;
 }
 
-.mw-link-left {
+#mw-link {
+	color: #5a0b0b;
+}
+
+#register-link {
+	color: #01404f;
+}
+
+.mw-text-left, .register-text-left {
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: 5%;
+	width: 45%;
+}
+
+.mw-text-right, .register-text-right {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 5%;
+	width: 45%;
+}
+
+.register-text-left, .register-text-right {
+	padding-top: 150px;
+}
+
+.mw-link-left, .register-link-left {
 	margin-right: 5%;
 }
 
-.mw-link-right {
+.mw-link-right, .register-link-right {
 	margin-left: 5%;
 }
 
@@ -290,27 +360,9 @@ a span {
     text-align: justify;
     color: white;
     margin: auto;
-    padding-top: 200px;
-    padding-bottom: 100px;
-}
-
-#register-info {
-	margin: auto;
-	width: 80%;
-}
-
-#register-form-link {
-	color: #01404f;
-	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 100px;
-	border-radius: 5px;
-	text-align: center;
-	width: 80%;
-	height: 45px;
-	line-height: 45px;
-	font-weight: bold;
-	background-color: white;
+    padding-bottom: 150px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #news {
@@ -322,10 +374,38 @@ a span {
 
     font-size: 130%;
     text-align: center;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    padding-left: 15%;
+    padding-right: 15%;
     color: white;
     margin: auto;
+}
+
+#news-piece {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 30px;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid white;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+#news-piece:hover {
+	color: #333333;
+	background-color: white;
+}
+
+#news-piece-title {
+	font-size: 120%;
+	margin-bottom: 10px;
+}
+
+#news-piece-subtitle {
+	font-size: 80%;
 }
 
 #about {
@@ -338,7 +418,7 @@ a span {
     font-size: 130%;
     text-align: justify;
     line-height: 175%;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
     padding-left: 10%;
     padding-right: 10%;
@@ -346,8 +426,22 @@ a span {
     margin: auto;
 }
 
-#about p {
-	text-align: center;
+.about-p {
+	text-align: justify;
+	padding-bottom: 50px;
+}
+
+#about-mid, #article-paragraph-mid {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#about-left, #article-paragraph-left {
+	padding-right: 40%;
+}
+
+#about-right, #article-paragraph-right {
+	padding-left: 40%;
 }
 
 #team, #companies {
@@ -407,8 +501,8 @@ a span {
 
 	font-size: 130%;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     color: white;
     margin: auto;
 }
@@ -533,10 +627,30 @@ a span {
   		font-size: 30px;
 	}
 
-	#mw-link {
+	#mw-link, #register-link {
 		margin: auto;
 		width: 100%;
 		margin-top: 50px;
+	}
+
+	.mw-text-left, .register-text-left {
+		padding-left: 0;
+		padding-right: 0;
+		margin: auto;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.mw-text-right, .register-text-right {
+		padding-left: 0;
+		padding-right: 0;
+		margin: auto;
+		width: 100%;
+	}
+
+	#about-mid, #about-left, #about-right {
+		padding: 0;
+		padding-bottom: 50px;
 	}
 
 	#contact-element {
@@ -598,7 +712,6 @@ a span {
 	  }
 	  .navbar-nav {
 	      float: none!important;
-	      margin-top: 7.5px;
 	  }
 	  .navbar-nav>li {
 	      float: none;
@@ -617,10 +730,30 @@ a span {
   		font-size: 30px;
 	}
 
-	#mw-link {
+	#mw-link, #register-link {
 		margin: auto;
 		width: 100%;
 		margin-top: 50px;
+	}
+
+	.mw-text-left, .register-text-left {
+		padding-left: 0;
+		padding-right: 0;
+		margin: auto;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.mw-text-right, .register-text-right {
+		padding-left: 0;
+		padding-right: 0;
+		margin: auto;
+		width: 100%;
+	}
+
+	#about-mid, #about-left, #about-right {
+		padding: 0;
+		padding-bottom: 50px;
 	}
 
 	#contact-element {
