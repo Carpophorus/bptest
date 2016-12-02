@@ -106,10 +106,10 @@ $(function () {
 		window.scrollTo(0,0);
 	};
 
-	bp.loadPiece = function (article-number) {
+	bp.loadPiece = function (articleNumber) {
 		//showLoading("#main-content");
 		var articleHtml;
-		switch(expression) {
+		switch(articleNumber) {
 			case 1:
 				articleHtml = mwHtml;
 				break;
