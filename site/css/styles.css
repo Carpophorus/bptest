@@ -9,12 +9,11 @@
 /*
 	TODO
 
-		news section
 		back navigation
-		animations	
-
+		spinners on each segment (ajax-loader)
+		animations
 		smaller images for mobile and mobile parallax
-		colored links on hover
+		colored links on hover in navbar
 */
 
 /*
@@ -22,7 +21,7 @@
 
 		new contact info
 		video clip
-		Google Forms content
+		Google Forms
 		companies
 		social
 
@@ -32,7 +31,9 @@
 		meta info
 		fixed navbar
 		multiple design issues
- */
+		news segment
+		articles edited
+*/
 
 /* HEADER */
 
@@ -420,13 +421,13 @@ a span {
     line-height: 175%;
     padding-top: 150px;
     padding-bottom: 100px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     color: white;
     margin: auto;
 }
 
-.about-p {
+.about-p, .article-p {
 	text-align: justify;
 	padding-bottom: 50px;
 }
@@ -521,6 +522,46 @@ a span {
 	background-position: center;
 	margin: auto;
 	padding: 30px;
+}
+
+.article {
+	font-size: 130%;
+	text-align: justify;
+	line-height: 175%;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	padding-left: 15%;
+	padding-right: 15%;
+	color: white;
+	margin: auto;
+}
+
+#mw-article {
+	background: url('../img/background-article-1.jpg') no-repeat;
+	/*height: 100%;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#values-article {
+	background: url('../img/background-article-2.jpg') no-repeat;
+	/*height: 100%;*/
+    background-attachment: fixed;
+    background-position: right;
+    background-size: cover;
+}
+
+#research-article {
+	background: url('../img/background-article-3.jpg') no-repeat;
+	/*height: 100%;*/
+    background-attachment: fixed;
+    background-position: right;
+    background-size: cover;
+}
+
+#references {
+	font-size: 70%;
 }
 
 /* END OTHER */
@@ -648,7 +689,7 @@ a span {
 		width: 100%;
 	}
 
-	#about-mid, #about-left, #about-right {
+	#about-mid, #about-left, #about-right, #article-paragraph-mid, #article-paragraph-left, #article-paragraph-right {
 		padding: 0;
 		padding-bottom: 50px;
 	}
@@ -751,7 +792,7 @@ a span {
 		width: 100%;
 	}
 
-	#about-mid, #about-left, #about-right {
+	#about-mid, #about-left, #about-right, #article-paragraph-mid, #article-paragraph-left, #article-paragraph-right {
 		padding: 0;
 		padding-bottom: 50px;
 	}
