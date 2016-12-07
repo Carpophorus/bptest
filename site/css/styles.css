@@ -560,7 +560,7 @@ a span {
 #values-article {
 	background: url('../img/background-article-2.jpg') no-repeat;
 	/*height: 100%;*/
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: right;
     /*background-size: cover;*/
 }
