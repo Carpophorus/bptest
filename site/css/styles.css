@@ -7,32 +7,18 @@
 */
 
 /*
+	DONE
+		contact info done with map enabled
+		aditional text editing
+		video added to about
+		loading spinners for each section
+
 	TODO
 
 		back navigation
-		spinners on each segment (ajax-loader)
 		animations
 		smaller images for mobile and mobile parallax
 		colored links on hover in navbar
-*/
-
-/*
-	REQ
-
-		new contact info
-		video clip
-		Google Forms
-		companies
-		social
-
-	DONE
-
-		new logo
-		meta info
-		fixed navbar
-		multiple design issues
-		news segment
-		articles edited
 */
 
 /* HEADER */
@@ -187,6 +173,11 @@ a span {
 
 .no-pad {
 	padding: 0;
+}
+
+.loader {
+	text-align: center;
+	padding-top: 20%;
 }
 
 #mw {
@@ -445,6 +436,21 @@ a span {
 	padding-left: 40%;
 }
 
+#about-video {
+	position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+#about-video iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #team, #companies {
 	padding-top: 100px;
     padding-bottom: 100px; 
@@ -506,6 +512,12 @@ a span {
     padding-bottom: 150px;
     color: white;
     margin: auto;
+}
+
+#map {
+	padding-top: 150px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 #fb-logo-img {
@@ -664,6 +676,10 @@ a span {
 }
 
 @media (min-width: 768px) and (max-width: 991px) { /* SM */
+	body {
+		padding-top: 67px;
+	}
+
 	.navbar-brand h1 {
   		font-size: 30px;
 	}
@@ -767,6 +783,10 @@ a span {
 }
 
 @media (max-width: 767px) { /* XS */
+	body {
+		padding-top: 67px;
+	}
+
 	.navbar-brand h1 {
   		font-size: 30px;
 	}

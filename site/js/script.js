@@ -24,11 +24,11 @@ $(function () {
 	var valuesHtml = "snp/values-article.html"
 	var researchHtml = "snp/research-article.html"
 
-	/*var showLoading = function (selector) {
-	  var html = "<div class='text-center'>";
-	  html += "<img src='images/ajax-loader.gif'></div>";
-	  insertHtml(selector, html);
-	};*/
+	var showLoading = function (selector, section) {
+		var html = "<div class='loader'>";
+		html += "<img src='img/ajax-loader-" + section + ".gif'></div>";
+		insertHtml(selector, html);
+	};
 
 	var insertHtml = function (selector, html) {
 	  var targetElem = document.querySelector(selector);
@@ -46,7 +46,7 @@ $(function () {
 	});
 
 	bp.loadHome = function () {
-		//showLoading("#main-content");
+		showLoading("#main-content", "home");
 		$ajaxUtils.sendGetRequest(
 			homeHtml,
 			function (responseText) {
@@ -58,7 +58,7 @@ $(function () {
 	};
 
 	bp.loadRegister = function () {
-		//showLoading("#main-content");
+		showLoading("#main-content", "register");
 		$ajaxUtils.sendGetRequest(
 			registerHtml,
 			function (responseText) {
@@ -71,7 +71,7 @@ $(function () {
 	};
 
 	bp.loadNews = function () {
-		//showLoading("#main-content");
+		showLoading("#main-content", "news");
 		$ajaxUtils.sendGetRequest(
 			newsHtml,
 			function (responseText) {
@@ -83,7 +83,7 @@ $(function () {
 	};
 
 	bp.loadAbout = function () {
-		//showLoading("#main-content");
+		showLoading("#main-content", "about");
 		$ajaxUtils.sendGetRequest(
 			aboutHtml,
 			function (responseText) {
@@ -95,7 +95,7 @@ $(function () {
 	};
 
 	bp.loadContact = function () {
-		//showLoading("#main-content");
+		showLoading("#main-content", "contact");
 		$ajaxUtils.sendGetRequest(
 			contactHtml,
 			function (responseText) {
@@ -107,7 +107,7 @@ $(function () {
 	};
 
 	bp.loadPiece = function (articleNumber) {
-		//showLoading("#main-content");
+		showLoading("#main-content", "news");
 		var articleHtml;
 		switch(articleNumber) {
 			case 1:
