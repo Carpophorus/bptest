@@ -7,19 +7,13 @@
 */
 
 /*
-	DONE
-		contact info reverted with map enabled
-		loading spinners for each section
-		aditional text editing
-		video added to about
-		solved design issues for smaller devices regarding navbar display and images***
-
 	TODO
 
 		back navigation
+		parallax mobile
 		animations
-		smaller images for mobile and mobile parallax
-		colored links on hover in navbar
+		smaller images for mobile?
+		colored links on hover in navbar?
 */
 
 /* HEADER */
@@ -177,8 +171,8 @@ a span {
 }
 
 .loader {
-	padding-top: 40%;
-	padding-bottom: 40%;
+	padding-top: 150px;
+	padding-bottom: 50%;
 	text-align: center;
 }
 
