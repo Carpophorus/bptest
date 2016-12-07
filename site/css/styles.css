@@ -555,7 +555,6 @@ a span {
     background-position: center;
     /*background-size: cover;*/
     background-size: auto 100vh;
-    back
 }
 
 #values-article {
@@ -563,7 +562,7 @@ a span {
 	/*height: 100%;*/
     background-attachment: fixed;
     background-position: right;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 
 #research-article {
