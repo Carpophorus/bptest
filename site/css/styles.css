@@ -8,10 +8,11 @@
 
 /*
 	DONE
-		contact info done with map enabled
+		contact info reverted with map enabled
+		loading spinners for each section
 		aditional text editing
 		video added to about
-		loading spinners for each section
+		solved design issues for smaller devices regarding navbar display and images***
 
 	TODO
 
@@ -177,7 +178,6 @@ a span {
 
 .loader {
 	text-align: center;
-	padding-top: 20%;
 }
 
 #mw {
@@ -553,7 +553,9 @@ a span {
 	/*height: 100%;*/
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    /*background-size: cover;*/
+    background-size: auto 100vh;
+    back
 }
 
 #values-article {
