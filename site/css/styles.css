@@ -177,7 +177,8 @@ a span {
 }
 
 .loader {
-	padding-top: 20%;
+	padding-top: 40%;
+	padding-bottom: 40%;
 	text-align: center;
 }
 
