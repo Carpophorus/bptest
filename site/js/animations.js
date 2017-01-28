@@ -11,7 +11,7 @@ function check_if_in_view() {
         var element_height = $element.outerHeight();
         var element_top_position = $element.offset().top;
         var element_bottom_position = (element_top_position + element_height);
-        console.log("triggered"); //???
+        /*console.log("triggered"); //???*/
 
         if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
             $element.addClass('in-view');
@@ -23,4 +23,4 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
-$window.scroll(function() { check_if_in_view(); console.log("scroll"); }); //???
+/*$window.scroll(function() { check_if_in_view(); console.log("scroll"); }); //???*/

@@ -20,9 +20,10 @@ $(function () {
 	var aboutHtml = "snp/about-snippet.html";
 	var contactHtml = "snp/contact-snippet.html";
 
-	var mwHtml = "snp/mw-article.html"
-	var valuesHtml = "snp/values-article.html"
 	var researchHtml = "snp/research-article.html"
+	var valuesHtml = "snp/values-article.html"
+	var mwHtml = "snp/mw-article.html"
+	var mediaHtml = "snp/media-article.html"
 
 	var showLoading = function (selector, section) {
 		var html = "<div class='loader'>";
@@ -111,14 +112,16 @@ $(function () {
 		var articleHtml;
 		switch(articleNumber) {
 			case 1:
-				articleHtml = mwHtml;
+				articleHtml = researchHtml;
 				break;
 			case 2:
 				articleHtml = valuesHtml;
 				break;
 			case 3:
-				articleHtml = researchHtml;
+				articleHtml = mwHtml;
 				break;
+			case 4:
+				articleHtml = mediaHtml;
 			default:
 				articleHtml = null;
 		}
