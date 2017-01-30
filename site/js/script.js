@@ -146,7 +146,7 @@ $(function () {
 		window.scrollTo(0,0);
 	}
 
-	window.addEventListener("onpopstate", function (event) {
+	window.onpopstate = function (event) {
 		var snp = null;
 		if(event.state) {
 			switch(event.state) {
@@ -192,7 +192,7 @@ $(function () {
 			);
 			window.scrollTo(0,0);
 		}
-	});
+	}
 
 	global.$bp = bp;
 })(window);
