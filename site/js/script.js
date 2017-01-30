@@ -44,7 +44,7 @@ $(function () {
 			},
 			false
 		);
-		history.state = {state: 1};
+		history.pushState({state: 1}, null, null);
 		window.scrollTo(0,0);
 	});
 
