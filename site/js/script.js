@@ -146,7 +146,7 @@ $(function () {
 		window.scrollTo(0,0);
 	}
 
-	window.addEventListener("window.onpopstate", function (event) {
+	window.addEventListener("onpopstate", function (event) {
 		var snp = null;
 		if(event.state) {
 			switch(event.state) {
