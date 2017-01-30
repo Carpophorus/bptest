@@ -181,6 +181,7 @@ $(function () {
 					snp = null;
 			}
 		}
+		console.log(snp);
 		if(snp) {
 			$ajaxUtils.sendGetRequest(
 				snp,
