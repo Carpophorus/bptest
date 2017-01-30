@@ -148,9 +148,9 @@ $(function () {
 
 	window.onpopstate = function (event) {
 		var snp = null;
-		console.log(event.state);
-		if(event.state) {
-			switch(event.state) {
+		console.log(event.state.state);
+		if(event.state.state) {
+			switch(event.state.state) {
 				case 1:
 					snp = homeHtml;
 					break;
