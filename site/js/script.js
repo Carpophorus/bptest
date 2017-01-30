@@ -148,6 +148,7 @@ $(function () {
 
 	window.onpopstate = function (event) {
 		var snp = null;
+		console.log(event.state);
 		if(event.state) {
 			switch(event.state) {
 				case 1:
