@@ -57,7 +57,7 @@ $(function () {
 			},
 			false
 		);
-		history.pushState({state: 1}, null, null);
+		if (history.state.state != 1) history.pushState({state: 1}, null, null);
 		window.scrollTo(0,0);
 	};
 
@@ -70,7 +70,7 @@ $(function () {
 			},
 			false
 		);
-		history.pushState({state: 2}, null, null);
+		if (history.state.state != 2) history.pushState({state: 2}, null, null);
 		window.scrollTo(0,0);
 	};
 
@@ -83,7 +83,7 @@ $(function () {
 			},
 			false
 		);
-		history.pushState({state: 3}, null, null);
+		if (history.state.state != 3) history.pushState({state: 3}, null, null);
 		window.scrollTo(0,0);
 	};
 
@@ -96,7 +96,7 @@ $(function () {
 			},
 			false
 		);
-		history.pushState({state: 4}, null, null);
+		if (history.state.state != 4) history.pushState({state: 4}, null, null);
 		window.scrollTo(0,0);
 	};
 
@@ -109,7 +109,7 @@ $(function () {
 			},
 			false
 		);
-		history.pushState({state: 5}, null, null);
+		if (history.state.state != 5) history.pushState({state: 5}, null, null);
 		window.scrollTo(0,0);
 	};
 
@@ -148,7 +148,6 @@ $(function () {
 
 	window.onpopstate = function (event) {
 		var snp = null;
-		console.log(event.state.state);
 		if(event.state.state) {
 			switch(event.state.state) {
 				case 1:
@@ -182,7 +181,6 @@ $(function () {
 					snp = null;
 			}
 		}
-		console.log(snp);
 		if(snp) {
 			$ajaxUtils.sendGetRequest(
 				snp,
