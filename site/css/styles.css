@@ -373,6 +373,19 @@ a span {
 	padding-bottom: 30px;
 	padding-left: 10%;
 	padding-right: 10%;
+	margin-bottom: 30px;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid white;
+	background-color: rgba(255, 255, 255, 0.1);
+	position: relative;
+}
+
+#notify-piece-last {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
 	margin-bottom: 130px;
 	color: white;
 	border-radius: 5px;
@@ -558,6 +571,71 @@ a span {
 }
 #company10 {
 	background: url('../img/company10.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company11 {
+	background: url('../img/company11.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company12 {
+	background: url('../img/company12.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company13 {
+	background: url('../img/company13.jpg') no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+#company14 {
+	background: url('../img/company14.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company15 {
+	background: url('../img/company15.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company16 {
+	background: url('../img/company16.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company17 {
+	background: url('../img/company17.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company18 {
+	background: url('../img/company18.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company19 {
+	background: url('../img/company19.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company20 {
+	background: url('../img/company20.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company21 {
+	background: url('../img/company21.svg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company22 {
+	background: url('../img/company22.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company23 {
+	background: url('../img/company23.jpg') no-repeat;
     background-size: 100% auto;
     background-position: center;
 }
