@@ -44,7 +44,55 @@ $(function () {
 			},
 			false
 		);
-		history.replaceState({state: 1}, null, null);
+		if(history.state) {
+			var snp = null;
+			if(history.state) {
+				if(history.state.state) {
+					switch(history.state.state) {
+						case 1:
+							snp = homeHtml;
+							break;
+						case 2:
+							snp = registerHtml;
+							break;
+						case 3:
+							snp = newsHtml;
+							break;
+						case 4:
+							snp = aboutHtml;
+							break;
+						case 5:
+							snp = contactHtml;
+							break;
+						case 1001:
+							snp = researchHtml;
+							break;
+						case 1002:
+							snp = valuesHtml;
+							break;
+						case 1003:
+							snp = mwHtml;
+							break;
+						case 1004:
+							snp = mediaHtml;
+							break;
+						default:
+							snp = null;
+					}
+				}
+			}
+			if(snp) {
+				$ajaxUtils.sendGetRequest(
+					snp,
+					function (responseText) {
+						document.querySelector("#main-content").innerHTML = responseText;
+					},
+					false
+				);
+				window.scrollTo(0,0);
+			}
+		}
+		else history.replaceState({state: 1}, null, null);
 		window.scrollTo(0,0);
 	});
 
