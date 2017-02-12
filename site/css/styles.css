@@ -1,15 +1,6 @@
 /*
-	home - red			- #7a0e0e, #5a0b0b
-	register - blue		- #0c3647, #011722, #01404f
-	news - orange		- #cb4800
-	about - green		- #0f5959
-	contact - purple	- #5a1846
-*/
-
-/*
 	TODO
 
-		back navigation
 		parallax mobile
 		animations
 */
@@ -635,7 +626,37 @@ a span {
     background-position: center;
 }
 #company23 {
-	background: url('../img/company23.jpg') no-repeat;
+	background: url('../img/company23.jpeg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company24 {
+	background: url('../img/company24.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company25 {
+	background: url('../img/company25.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company26 {
+	background: url('../img/company26.gif') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company27 {
+	background: url('../img/company27.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company28 {
+	background: url('../img/company28.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#company29 {
+	background: url('../img/company29.png') no-repeat;
     background-size: 100% auto;
     background-position: center;
 }
@@ -800,6 +821,50 @@ a span {
 
 #happy {
 	background: url('../img/TV Happy thumb.jpg') no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 61%;
+    background-position: center;
+}
+
+#studio {
+	background: url('../img/studioB thumb.jpg') no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 61%;
+    background-position: center;
+}
+
+#blitz {
+	background: url('../img/blic zena.jpg') no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 61%;
+    background-position: center;
+}
+
+#minutes {
+	background: url('../img/150 minuta thumb.jpg') no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 61%;
+    background-position: center;
+}
+
+#radio202 {
+	background: url('../img/radio202.png') no-repeat;
+	background-size: 100% auto;
+	width: 70%;
+	margin: auto;
+	padding-bottom: 61%;
+    background-position: center;
+}
+
+#politika {
+	background: url('../img/Politika2 thumb.jpg') no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 61%;
+    background-position: center;
+}
+
+#rbpp {
+	background: url('../img/rbpp thumb.jpg') no-repeat;
 	background-size: 100% auto;
 	padding-bottom: 61%;
     background-position: center;
